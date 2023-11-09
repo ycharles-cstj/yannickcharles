@@ -31,3 +31,8 @@ p{
     text-align: center;
     line-height: 1.4em;
 }
+
+div.sociaux img{
+    width: 32px;
+    padding: 16px;
+}
