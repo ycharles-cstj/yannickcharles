@@ -4,19 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap" rel="stylesheet">
     <title>Yannick Charles - artiste </title>
 </head>
 <body>
     <div class="interface">
-        <header>
+        <!--[Bouton menu burger]-->
+        <svg id='burger-menu' viewBox="0 0 100 80" width="40" height="40" onclick="openNav()" >
+            <rect width="100" height="20"></rect>
+            <rect y="30" width="100" height="20"></rect>
+            <rect y="60" width="100" height="20"></rect>
+        </svg>
 
+        <!--[Panneau menu]-->
+        <nav id="mainNav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+            <ul>
+                <li> <a href="#" onclick="closeNav()">Mon premier choix</a> </li>
+                <li> <a href="#" onclick="closeNav()">Ma deuxième option</a> </li>
+                <li> <a href="#" onclick="closeNav()">Et ma dernière option</a> </li>
+            </ul>
+        </nav>
+
+        <!--[]-->
+        <header>
+            <!--[Logo]-->
             <div class="logo">
                 <img src="_assets/SVG/logo_yannick_charles-artiste.svg" alt="Logo Yannick Charles - artiste" />
             </div>
 
+            <!--[Image arrière-plan]-->
             <img id="background" src="_assets/jpg/artiste-header-480.jpg" alt="Arrière-plan"
             srcset="
                 _assets/jpg/artiste-header-480.jpg 480w,
@@ -31,45 +48,96 @@
             480px
             "
         />
-        </header>
+        </header> 
 
-        <p class="explication">L'image intégrée ici est la même peut importe la taille du fureteur. Le but de cette stratégie est de faire en sorte que le fureteur charge la bonne image en fonction de la résolution de l'écran, le type d'appareil, la vitesse de chargement des éléments de la page, etc. Bref, c'est le fureteur qui a le dernier mot sur l'image à choisir.  </p>
+        <!--[Zone de contenu principal]-->
+        <main>
+            <!--[Section description de l'artiste]-->
+            <section id="artiste">
+                <header>
+                    <h2>L'artiste</h2>
+                </header>
+
+                <p>Originaire de Lachute dans les Laurentides, je suis titulaire d'un DEC en multimédia obtenu en 2006, d'un BACC en communication médias interactifs en 2009 ainsi qu'une maîtrise en enseignement collégial en 2019. Depuis 2009, j'enseigne au Cégep de Saint-Jérôme en multimédia principalement dans les cours de design d'interface et dans le parcours Web artistique. Certains ont fait du pain et de la peinture pendant la pendémie, dans mon cas c'est les deux! </p>
+            </section>
+
+            <!--[Section de l'actualité]-->
+            <section id="palette-actualite">
 
 
+            </section>
+            
+            <!--[Section de la démarche artistique]-->
+            <section id="demarche">
+                <header>
+                    <h2>Démarche artistique de l'artiste</h2>
+                </header>
 
+                <p>Mon approche artistique est grandement influencée par mes 15 années d'enseignement en multimédia. Ce domaine demande la fusion de différentes technologies et la combinaison de médias pour créer des expériences immersives ou transmettre des messages. Je cherche à relier les compétences acquises dans mon expérience en design graphique à mes créations.</p>
 
+                <p>Je crée surtout des œuvres abstraites à partir de taches de peinture. Mon objectif est de provoquer des sentiments de mouvement dans chaque création.  J'ajoute des textures pour que la toile ait plus de profondeur, en utilisant différentes couches pour intensifier l'effet.</p>
 
+                <p>Pour ce qui est des médiums que j'utilise, je me concentre principalement sur la peinture et l'encre acrylique. J'utilise également de l'aquarelle, de la poudre de pigment d'oxyde de fer et du charbon à mes œuvres.</p>
 
+                <p>Au niveau des techniques, j'utilise des spatules, des couteaux, le mono-printing, le collage avec des découpures d'anciens journaux, des pochoirs, ainsi qu'une technique de bulles de savon colorées. C'est à travers ces techniques que je réalise mon parallèle avec le multimédia.</p>
 
+                <p>Mes influences artistiques, notamment le constructivisme, le dadaïsme, l'art déco, le Pop Art et le Bauhaus, apportent une profondeur conceptuelle à mes créations. Mes palettes de couleurs sont vives et modernes, jouant un rôle central dans ma démarche artistique. Il est important pour moi que mes œuvres aient un contraste visuel intéressant ainsi qu'une composition dynamique.</p>
 
+                <p>Bref, ma démarche artistique se caractérise par l'exploration et la fusion de diverses techniques, l'incorporation d'influences esthétiques variées, et l'utilisation d'une palette de couleurs vive et moderne. Cette approche créative reflète une connexion profonde entre le multimédia et l'art traditionnel, offrant ainsi des créations abstraites uniques.</p>
+            </section>
+        </main>
 
+        <!--[Footer]-->
+        <footer>
 
-        <!-- =================================================================
-        <h1><img src="assets/logo_fb.png" alt="logo_fb"></h1>
-        <p>
-            Je peaufine mon site web pour vous offrir une expérience exceptionnelle. Je travaille fort en coulisses pour mettre en place quelque chose de vraiment spécial.
-        </p>
-        <p>
-            Pendant cette période de construction, le site web sera temporairement hors ligne. Restez connecté et suivez-moi sur mes réseaux sociaux pour les dernières mises à jour. Merci de votre compréhension et de votre patience. J'ai hâte de vous accueillir sur mon tout nouveau site!
-        </p>
-        <div class="sociaux">
+            Contact 514-245-8005
+            charles.yannick@gmail.com
             <div class="item-sociaux">
                 <a href="https://www.facebook.com/profile.php?id=61553281924359" target="_blank">
-                    <img src="assets/SVG/facebook.svg" alt="lien facebook">
+                    <img src="_assets/SVG/facebook.svg" alt="lien facebook">
                 </a>
                 
             </div>
             
             <div class="item-sociaux">
                 <a href="https://www.tiktok.com/@yannickcharlesartiste" target="_blank">
-                    <img src="assets/SVG/tiktok.svg" alt="lien tiktok">
+                    <img src="_assets/SVG/tiktok.svg" alt="lien tiktok">
                 </a>
             </div>
-            
-        </div>
-        
-        -->
-
+        </footer>
     </div>
+
+<script>
+    function openNav() {
+        document.querySelector('#mainNav').style.width = "100%";
+
+        setTimeout(()=>{
+            let menuOptions = document.querySelectorAll('#mainNav li a');
+
+            for (const menuOption of menuOptions) {
+                menuOption.style.opacity = 1;
+                menuOption.classList.remove('fadeMenu');
+            }
+        },800);
+
+        console.log('ouverture')
+    }
+
+    function closeNav() {
+        let menuOptions = document.querySelectorAll('#mainNav li a');
+
+        for (const menuOption of menuOptions) {
+            menuOption.style.opacity = 0;
+            menuOption.classList.add('fadeMenu');
+        }
+
+        setTimeout(()=>{
+            document.querySelector('#mainNav').style.width = "0%";
+        },600);
+
+        console.log('fermeture')
+    }
+
+</script>
 </body>
 </html>
