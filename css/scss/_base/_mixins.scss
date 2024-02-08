@@ -1,0 +1,28 @@
+// Mixins 
+//----------------------------------------------------
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Gestion du Flex
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@mixin setFlex($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Débug de la mise en page
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@mixin debug {
+    border : 1px red solid;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Gestion des breakpoints de l'interface
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@mixin breakpoint-min($screen){
+    @media (min-width: #{$screen}px){
+        @content;
+    }
+}

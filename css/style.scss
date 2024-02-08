@@ -1,0 +1,10 @@
+// Fichier central SCSS
+//----------------------------------------------------
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Importation
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@import "_reset.scss";
+@import 'scss/_base/base'; 
+@import 'scss/_interface/interface'; 
+@import 'scss/_layout/layout';

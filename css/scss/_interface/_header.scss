@@ -1,0 +1,39 @@
+// Header 
+//----------------------------------------------------
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Structure générale de l'entête
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+header{
+    position: relative;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Image d'arrière plan HERO
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#background{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+}   
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Logo
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+div.logo {
+    width: 180px;
+    background-color: #fff;
+
+    & img {
+        width: 100%;
+        padding: 16px;
+    }
+}
