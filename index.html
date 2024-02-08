@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +11,40 @@
 </head>
 <body>
     <div class="interface">
+        <header>
+
+            <div class="logo">
+                <img src="_assets/SVG/logo_yannick_charles-artiste.svg" alt="Logo Yannick Charles - artiste" />
+            </div>
+
+            <img id="background" src="_assets/jpg/artiste-header-480.jpg" alt="Arrière-plan"
+            srcset="
+                _assets/jpg/artiste-header-480.jpg 480w,
+                _assets/jpg/artiste-header-960.jpg 960w, 
+                _assets/jpg/artiste-header-1280.jpg 1280w,
+                _assets/jpg/artiste-header-2400.jpg 2400w
+            "
+            sizes=" 
+            (min-width: 2400px) 2400px,
+            (min-width: 1280px) 1280px,
+            (min-width: 960px) 960px,
+            480px
+            "
+        />
+        </header>
+
+        <p class="explication">L'image intégrée ici est la même peut importe la taille du fureteur. Le but de cette stratégie est de faire en sorte que le fureteur charge la bonne image en fonction de la résolution de l'écran, le type d'appareil, la vitesse de chargement des éléments de la page, etc. Bref, c'est le fureteur qui a le dernier mot sur l'image à choisir.  </p>
+
+
+
+
+
+
+
+
+
+
+        <!-- =================================================================
         <h1><img src="assets/logo_fb.png" alt="logo_fb"></h1>
         <p>
             Je peaufine mon site web pour vous offrir une expérience exceptionnelle. Je travaille fort en coulisses pour mettre en place quelque chose de vraiment spécial.
@@ -34,6 +67,9 @@
             </div>
             
         </div>
+        
+        -->
+
     </div>
 </body>
 </html>
