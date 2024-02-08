@@ -1,0 +1,19 @@
+// Section démarche artistique de l'artiste
+//----------------------------------------------------
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Structure générale
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#demarche{
+    @extend .default-font;
+    
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Texte
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#demarche{
+    & p{
+        @extend .paragraphe;
+    }
+}

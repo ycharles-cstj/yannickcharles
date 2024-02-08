@@ -14,8 +14,8 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // Débug de la mise en page
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
-@mixin debug {
-    border : 1px red solid;
+@mixin debug($line, $color) {
+    border : #{$line}px $color solid;
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -25,4 +25,9 @@
     @media (min-width: #{$screen}px){
         @content;
     }
+}
+
+@mixin resetBox{
+    padding: 0;
+    margin:0;
 }

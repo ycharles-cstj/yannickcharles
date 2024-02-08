@@ -4,11 +4,17 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // Style gérénal des boutons
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
-.bouton{
-    @include setFlex(column,center ,center );
-    padding : 1em;
-    text-decoration: none;
-    font-size: 1em;
+.default-font{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     color: #000;
-    border-radius: 3em;
+}
+
+.paragraphe{
+    padding: 32px;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    hyphens: auto;
+    text-align: justify;
+    color: var(--blackyc);
 }

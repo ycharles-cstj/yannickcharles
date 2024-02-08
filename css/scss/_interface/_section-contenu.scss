@@ -1,0 +1,31 @@
+// Titre de section
+//----------------------------------------------------
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Structure générale
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+section{
+    @extend .row;
+    @include resetBox;
+    padding: 16px;
+    //@include debug(3, red);
+}
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Entête de section
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+section > header{
+    @extend .col-sm;
+    //@include debug(3, rgb(38, 0, 255));
+    @include setFlex(column, start, center);
+    @include resetBox;
+    height: auto;
+    margin-top: 46px;
+    padding: 16px;
+    
+    & h2{
+        width: 100%;
+        padding: 16px;
+        color: #fff;
+        background-color: var(--blackyc);
+    }
+}
