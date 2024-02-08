@@ -36,3 +36,8 @@ div.sociaux img{
     width: 32px;
     padding: 16px;
 }
+
+.cls-2 {
+    filter: brightness(0) invert(1);
+    background-color: #333;
+}
