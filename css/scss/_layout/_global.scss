@@ -5,7 +5,13 @@
 // Conteneur général -> interface
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
 div.interface{
+    position: relative;
     max-width: 100%;
     min-height: 100vh;
+}
+
+main{
+    @extend .container-fluid;
+    @include resetBox;
 }
 

@@ -1,6 +1,113 @@
-// Header 
+// Panneau d'options navigation principale 
 //----------------------------------------------------
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// Structure générale de la navigation
+// Bouton burger
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#burger-menu{
+    position: fixed;
+    right:24px;
+    top: 24px;
+    z-index: 1000;
+    border: 3px #fff solid;
+    padding : 8px;
+    background-color: #333;
+    cursor: pointer;
+
+
+    & rect{
+        fill: #fff;
+    }
+
+    &:hover{
+        background-color: #000;
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Panneau
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+nav{
+    @include setFlex(column, center, center);
+
+    position: fixed;
+    width: 0%;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: coral;
+    overflow-x: hidden;
+    transition: 0.3s;
+
+    @include breakpoint-min(768){
+        align-items: start;
+    }
+}
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Éléments du menu 
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+nav ul{
+    width: 100%;
+    list-style: none;
+
+    & li{
+        margin: 4rem 0;
+        color: #ccc;
+        text-align: center;
+
+        @include breakpoint-min(768){
+            text-align: left;
+            margin: 6rem 0 6rem 4rem;
+
+        }
+
+        @include breakpoint-min(992){
+            margin-left:10rem;
+            margin: 8rem 0 8rem 8rem;
+        }
+
+        & a {
+            display: block;
+            font-size: 2rem;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: #fff;
+            transition: 0.3s;
+            opacity: 0;
+
+            @include breakpoint-min(768){
+                font-size: 3rem;
+            }
+    
+            @include breakpoint-min(992){
+                font-size: 4rem;
+            }
+
+            &:hover{
+                color: #333;
+            }
+        }
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Animation des options du menu 
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+.fadeMenu{
+    transition: opacity 0.5s ease-in-out;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Bouton fermeture
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+.closebtn {
+    position: absolute;
+    top : 36px;
+    right: 36px;
+    font-size: 60px;
+    margin: 0;
+    color: #fff;
+}
