@@ -733,6 +733,7 @@ progress {
 .container,
 .container-fluid,
 main,
+div.copyright,
 footer,
 .container-xxl,
 .container-xl,
@@ -3937,6 +3938,7 @@ textarea.form-control-lg {
 .navbar > .container,
 .navbar > .container-fluid,
 .navbar > main,
+.navbar > div.copyright,
 .navbar > footer,
 .navbar > .container-sm,
 .navbar > .container-md,
@@ -12720,6 +12722,17 @@ div.sociaux a:hover {
   height: 32px;
   border-radius: 50%;
   border: 3px solid #ccc;
+}
+
+div.copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 32px 16px;
+  background-color: var(--noir);
+  background-color: var(--gris3);
+  color: var(--blanc);
 }
 
 div.interface {
