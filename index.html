@@ -3,37 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap" rel="stylesheet">
     <title>Yannick Charles - artiste </title>
 </head>
 <body>
     <div class="interface">
-        <h1><img src="assets/logo_fb.png" alt="logo_fb"></h1>
-        <p>
-            Je peaufine mon site web pour vous offrir une expérience exceptionnelle. Je travaille fort en coulisses pour mettre en place quelque chose de vraiment spécial.
-        </p>
-        <p>
-            Pendant cette période de construction, le site web sera temporairement hors ligne. Restez connecté et suivez-moi sur mes réseaux sociaux pour les dernières mises à jour. Merci de votre compréhension et de votre patience. J'ai hâte de vous accueillir sur mon tout nouveau site!
-        </p>
-        <div class="sociaux">
-            <div class="item-sociaux">
-                <a href="https://www.facebook.com/profile.php?id=61553281924359" target="_blank">
-                    <img src="assets/SVG/facebook.svg" alt="lien facebook">
-                </a>
+        <!--[Bouton menu burger]-->
+        <svg id='burger-menu' viewBox="0 0 100 80" width="40" height="40" onclick="openNav()" >
+            <rect width="100" height="20"></rect>
+            <rect y="30" width="100" height="20"></rect>
+            <rect y="60" width="100" height="20"></rect>
+        </svg>
+
+        <!--[Panneau menu]-->
+        <nav id="mainNav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+            <ul>
+                <li> <a href="#artiste" onclick="closeNav()">L'artiste</a> </li>
+                <li> <a href="#actualite" onclick="closeNav()">La palette d'actualité</a> </li>
+                <li> <a href="#demarche" onclick="closeNav()">La démarche artistique de l'artiste</a> </li>
+            </ul>
+        </nav>
+
+        <!--[Entête du site]-->
+        <header class="main-header">
+            <!--[Logo]-->
+            <div class="logo">
+                <img src="_assets/SVG/logo_yannick_charles-artiste.svg" alt="Logo Yannick Charles - artiste" />
+            </div>
+
+            <!--[Image arrière-plan]-->
+            <img id="background" src="_assets/jpg/artiste-header-480.jpg" alt="Arrière-plan"
+                srcset="
+                    _assets/jpg/artiste-header-480.jpg 480w,
+                    _assets/jpg/artiste-header-960.jpg 960w, 
+                    _assets/jpg/artiste-header-1280.jpg 1280w,
+                    _assets/jpg/artiste-header-2400.jpg 2400w
+                "
+                sizes=" 
+                (min-width: 2400px) 2400px,
+                (min-width: 1280px) 1280px,
+                (min-width: 960px) 960px,
+                480px
+                "
+            />
+
+            <div class="fleche">
+                <img src="_assets/SVG/fleche-contenu.svg" alt="flèche contenu" />
+            </div>
+
+            
+        </header> 
+
+        <!--[Zone de contenu principal]-->
+        <main>
+
+            <!--[Section description de l'artiste]-->
+            <section id="artiste">
+                <header>
+                    <h2>L'artiste</h2>
+                </header>
+
+                <p>Originaire de Lachute dans les Laurentides, je suis titulaire d'un DEC en multimédia obtenu en 2006, d'un BACC en communication médias interactifs en 2009 ainsi qu'une maîtrise en enseignement collégial en 2019. Depuis 2009, j'enseigne au Cégep de Saint-Jérôme en multimédia principalement dans les cours de design d'interface et dans le parcours Web artistique. Certains ont fait du pain et de la peinture pendant la pendémie, dans mon cas c'est les deux! </p>
+            </section>
+
+            <!--[Section description de l'artiste]-->
+            <section id="services">
+                <p>Vous êtes à la recherche d'une œuvre artistique unique pour embellir votre espace de vie ? Vous avez frappé à la bonne porte ! Si une de mes créations suscite votre intérêt, n'hésitez pas à me contacter pour en savoir plus. Je serai ravi de répondre à toutes vos questions et de discuter de la manière dont mes œuvres peuvent trouver leur place dans votre vie.</p>
+
+                <p>Pour les jeunes professionnels souhaitant ajouter une touche originale à leur décor, les amateurs cherchant à mettre en valeur une pièce particulière de leur maison, ou toute personne à la recherche d'une œuvre artistique créative, je propose également des projets personnalisés. Nous pouvons nous rencontrer pour discuter de vos idées, de vos préférences et des modalités pour créer une pièce artistique qui correspond parfaitement à votre vision. Ensemble, nous pouvons transformer vos idées en une réalité artistique qui enrichira votre environnement quotidien.</p>
+
+                <p> N'hésitez pas à me contacter et à explorer l'art qui vous ressemble. Votre espace mérite une touche unique et personnalisée, et je suis là pour vous accompagner dans cette aventure artistique.</p>
+            </section>
+
+
+            <!--[Section de l'actualité]-->
+            <section id="actualite">
+                <header>
+                    <h2>La palette d'actualité</h2>
+                </header>
+
+                <div class="conteneur-card">
+                    <article class="info-card">
+
+                        <div class="info-date">Février 2024</div>
+    
+                        <div class="info-image">
+                            <img class="info-img-card" src="_assets/jpg/expo-hachem-480.jpg" alt="Exposition au Hachem Saint-Jérôme"
+                                srcset="
+                                    _assets/jpg/expo-hachem-480.jpg 480w,
+                                    _assets/jpg/expo-hachem-960.jpg 960w, 
+                                    _assets/jpg/expo-hachem-1280.jpg 1280w,
+                                    _assets/jpg/expo-hachem-2400.jpg 2400w
+                                "
+                                sizes=" 
+                                (min-width: 2400px) 2400px,
+                                (min-width: 1280px) 1280px,
+                                (min-width: 960px) 960px,
+                                480px
+                                "
+                            />
+                        </div>
+    
+                        <div class="info-desc">
+                            <h3>Exposition solo Hachem de Saint-Jérôme</h3>
+                            <p>Découvrez ma première exposition solo au Hachem, où 23 toiles révèlent l'émergence de mon parcours artistique. Vernissage le 10 février, de 14h à 16h30. Chaque toile, témoin de ma passion grandissante, célèbre l'authenticité et l'émotion. Une expérience artistique unique à ne pas manquer, marquant le début d'une exploration personnelle et visuelle. </p>
+                        </div>
+                    </article>
+
+                    <article class="info-card">
+    
+                        <div class="info-date">Décembre 2023</div>
+    
+                        <div class="info-image">
+                            <img class="info-img-card" src="_assets/jpg/hangart-480.jpg" alt="Exposition au Hachem Saint-Jérôme"
+                                srcset="
+                                    _assets/jpg/hangart-480.jpg 480w,
+                                    _assets/jpg/hangart-960.jpg 960w, 
+                                    _assets/jpg/hangart-1280.jpg 1280w,
+                                    _assets/jpg/hangart-2400.jpg 2400w
+                                "
+                                sizes=" 
+                                (min-width: 2400px) 2400px,
+                                (min-width: 1280px) 1280px,
+                                (min-width: 960px) 960px,
+                                480px
+                                "
+                            />
+                        </div>
+    
+                        <div class="info-desc">
+                            <h3>Exposition collective les petits formarts au HangArt Québec</h3>
+                            <p>En décembre dernier, j'ai eu le plaisir d'être artiste exposant au HangArt de Québec, dévoilant cinq toiles en format 12x12 à la veille de Noël. Chacune des toiles présentait des styles visuels uniques, créant une expérience artistique diversifiée au sein de cette exposition collective.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            
+            <!--[Section de la démarche artistique]-->
+            <section id="demarche">
+                <header>
+                    <h2>La démarche artistique de l'artiste</h2>
+                </header>
+
+                <p>Mon approche artistique est grandement influencée par mes 15 années d'enseignement en multimédia. Ce domaine demande la fusion de différentes technologies et la combinaison de médias pour créer des expériences immersives ou transmettre des messages. Je cherche à relier les compétences acquises dans mon expérience en design graphique à mes créations.</p>
+
+                <p>Je crée surtout des œuvres abstraites à partir de taches de peinture. Mon objectif est de provoquer des sentiments de mouvement dans chaque création.  J'ajoute des textures pour que la toile ait plus de profondeur, en utilisant différentes couches pour intensifier l'effet.</p>
+
+                <p>Pour ce qui est des médiums que j'utilise, je me concentre principalement sur la peinture et l'encre acrylique. J'utilise également de l'aquarelle, de la poudre de pigment d'oxyde de fer et du charbon à mes œuvres.</p>
+
+                <p>Au niveau des techniques, j'utilise des spatules, des couteaux, le mono-printing, le collage avec des découpures d'anciens journaux, des pochoirs, ainsi qu'une technique de bulles de savon colorées. C'est à travers ces techniques que je réalise mon parallèle avec le multimédia.</p>
+
+                <p>Mes influences artistiques, notamment le constructivisme, le dadaïsme, l'art déco, le Pop Art et le Bauhaus, apportent une profondeur conceptuelle à mes créations. Mes palettes de couleurs sont vives et modernes, jouant un rôle central dans ma démarche artistique. Il est important pour moi que mes œuvres aient un contraste visuel intéressant ainsi qu'une composition dynamique.</p>
+
+                <p>Bref, ma démarche artistique se caractérise par l'exploration et la fusion de diverses techniques, l'incorporation d'influences esthétiques variées, et l'utilisation d'une palette de couleurs vive et moderne. Cette approche créative reflète une connexion profonde entre le multimédia et l'art traditionnel, offrant ainsi des créations abstraites uniques.</p>
+            </section>
+        </main>
+
+        <!--[Footer]-->
+        <footer>
+            <div class="signature">
+                <img src="_assets/SVG/signature.svg" alt="Signature Yannick Charles - artiste">
+            </div>
+
+            <div class="info">
+                <a href="mailto:charles.yannick@gmail.com" target="_blank">charles.yannick@gmail.com</a>
+                <a href="tel:+15142458005">514-245-8005</a>
+            </div>
+            
+            <div class="sociaux">
+                <div class="item-sociaux">
+                    <a href="https://www.facebook.com/profile.php?id=61553281924359" target="_blank">
+                        <img src="_assets/SVG/facebook.svg" alt="lien facebook">
+                    </a>
+                    
+                </div>
                 
+                <div class="item-sociaux">
+                    <a href="https://www.tiktok.com/@yannickcharlesartiste" target="_blank">
+                        <img src="_assets/SVG/tiktok.svg" alt="lien tiktok">
+                    </a>
+                </div>
             </div>
-            
-            <div class="item-sociaux">
-                <a href="https://www.tiktok.com/@yannickcharlesartiste" target="_blank">
-                    <img src="assets/SVG/tiktok.svg" alt="lien tiktok">
-                </a>
-            </div>
-            
-        </div>
+        </footer>
     </div>
+
+<script>
+    function openNav() {
+        document.querySelector('#mainNav').style.width = "100%";
+        document.querySelector('#burger-menu').style.display = "none";
+
+        setTimeout(()=>{
+            let menuOptions = document.querySelectorAll('#mainNav li a');
+
+            for (const menuOption of menuOptions) {
+                menuOption.style.opacity = 1;
+                menuOption.classList.remove('fadeMenu');
+            }
+        },800);
+
+        console.log('ouverture')
+    }
+
+    function closeNav() {
+        
+        let menuOptions = document.querySelectorAll('#mainNav li a');
+
+        for (const menuOption of menuOptions) {
+            menuOption.style.opacity = 0;
+            menuOption.classList.add('fadeMenu');
+        }
+
+        setTimeout(()=>{
+            document.querySelector('#mainNav').style.width = "0%";
+            document.querySelector('#burger-menu').style.display = "block";
+        },600);
+
+        console.log('fermeture')
+    }
+
+</script>
 </body>
 </html>
